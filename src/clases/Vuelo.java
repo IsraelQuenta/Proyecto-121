@@ -5,18 +5,18 @@ import estructuras.LDNormalP;
 public class Vuelo {
 	private LDNormalP p;
 	private String origen, destino;
-	private String HoraLlegada;
+	private String horaLlegada;
 
 	public Vuelo(LDNormalP p, String origen, String destino, String horaLlegada) {
 		this.p = p;
 		this.origen = origen;
 		this.destino = destino;
-		HoraLlegada = horaLlegada;
+		this.horaLlegada = horaLlegada;
 	}
 
 	public void mostrar() {
 		System.out.println("\t Vuelo");
-		System.out.println("Hora de llegada: " + HoraLlegada + "\nOrigen: " + origen + "\nDestino:" + destino);
+		System.out.println("Hora de llegada: " + horaLlegada + "\nOrigen: " + origen + "\nDestino:" + destino);
 		System.out.println("Pasajeros: \n\t");
 		this.p.mostrar();
 	}
@@ -46,11 +46,11 @@ public class Vuelo {
 	}
 
 	public String getHoraLlegada() {
-		return HoraLlegada;
+		return horaLlegada;
 	}
 
 	public void setHoraLlegada(String horaLlegada) {
-		HoraLlegada = horaLlegada;
+		this.horaLlegada = horaLlegada;
 	}
 
 }

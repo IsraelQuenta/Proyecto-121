@@ -8,8 +8,9 @@ public class Vuelo {
 	private String origen, destino;
 	private String horaLlegada;
 
-	public Vuelo(LDNormalP p, String origen, String destino, String horaLlegada) {
+	public Vuelo(LDNormalP p, String aerolinea, String origen, String destino, String horaLlegada) {
 		this.p = p;
+		this.aerolinea = aerolinea;
 		this.origen = origen;
 		this.destino = destino;
 		this.horaLlegada = horaLlegada;

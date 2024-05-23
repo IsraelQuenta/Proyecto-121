@@ -78,8 +78,8 @@ public class Principal {
 		ListaPasajeros2.adiFinal(p3);
 		ListaPasajeros2.adiFinal(p13);
 		// vuelo1
-		Vuelo vuelo1 = new Vuelo(ListaPasajeros1, "SantaCruz", "LaPaz", "19:15");
-		Vuelo vuelo2 = new Vuelo(ListaPasajeros2, "Buenos Aires", "LaPaz", "19:20");
+		Vuelo vuelo1 = new Vuelo(ListaPasajeros1, "Boliviana de Aviacion (BoA)", "SantaCruz", "LaPaz", "19:15");
+		Vuelo vuelo2 = new Vuelo(ListaPasajeros2, "AuroSur", "Buenos Aires", "LaPaz", "19:20");
 		// cola de vuelos
 		CNormalV colaVuelos = new CNormalV();
 		colaVuelos.adi(vuelo1);

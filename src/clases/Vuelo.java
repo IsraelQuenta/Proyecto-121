@@ -4,6 +4,7 @@ import estructuras.LDNormalP;
 
 public class Vuelo {
 	private LDNormalP p;
+	private String aerolinea;
 	private String origen, destino;
 	private String horaLlegada;
 
@@ -16,6 +17,7 @@ public class Vuelo {
 
 	public void mostrar() {
 		System.out.println("\t Vuelo");
+		System.out.println("Aerolinea: " + aerolinea);
 		System.out.println("Hora de llegada: " + horaLlegada + "\nOrigen: " + origen + "\nDestino:" + destino);
 		System.out.println("Pasajeros: \n\t");
 		this.p.mostrar();
@@ -27,6 +29,14 @@ public class Vuelo {
 
 	public void setP(LDNormalP p) {
 		this.p = p;
+	}
+
+	public String getAerolinea() {
+		return aerolinea;
+	}
+
+	public void setAerolinea(String aerolinea) {
+		this.aerolinea = aerolinea;
 	}
 
 	public String getOrigen() {
